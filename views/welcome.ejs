@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome message</title>
+</head>
+<body>
+    <h1>check</h1>
+    <h1>checking</h1>
+    <h1>checked</h1>
+    <h1>Trying nodemailer for the first time</h1>
+    <div><%= number %></div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .header img {
+            width: 100px;
+        }
+
+        .content {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .otp {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/VASDLogo.png" %>"" alt="Company Logo">
+        </div>
+        <div class="content">
+            <h1>Email Verification</h1>
+            <p>Hi <%= userName %>,</p>
+            <p>Thank you for registering with our Company. Please use the following One-Time Password (OTP) to verify your
+                email address:</p>
+            <div class="otp"><%= number %></div>
+            <p>This OTP is valid for the next 10 minutes. Please do not share this OTP with anyone.</p>
+            <p>If you did not request this, please ignore this email.</p>
+            <p>Thank you,<br>The Company Team</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 SOME. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
